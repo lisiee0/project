@@ -38,9 +38,8 @@
 <!-- 부트스트랩 Bootstrap core CSS -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-
 <style>
-	.poster {width: 270px;}
+	div {border: 1px solid black;}
 </style>
 
 
@@ -95,11 +94,6 @@
 		<!-- //navigation -->
 		
 		
-		<!-- 동영상자리 -->
-		<div>
-		
-		</div>
-		
 		
 		<div class="container-fluid">
 	
@@ -108,107 +102,83 @@
 				<div class="col-xs-1">왼쪽 공백</div>
 				
 				<div class="col-xs-10">
-					<div class="row">
-						<h3>추천공연</h3>
+			
+					<!-- aside -->
+					<div class="col-xs-3">
+						<div id="container" class="clearfix">
+							<div id="aside">
+								<h2>관리페이지</h2>
+								<ul>
+									<li><h3>공연장 목록</h3></li>
+								</ul>
+							</div>
+						</div>
 					</div>
+					<!-- //aside -->
+				
+				
+					<!-- content -->
+					<div id="content" class="col-xs-9">
 					
-					<!-- 공연리스트 -->
-					<div class="row">
-					
-						<ul class="nav navbar-nav">
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-						</ul>
+						<!-- content-head -->
+						<div id="content-head">
+							<div class="row">
+								<h3>공연장 등록</h3>
+							</div>
+
+						</div>
+						<!-- //content-head -->
+				
+						<!-- content body -->
+						<div id="board">
 						
+                            <div id="add">
+                                <!-- form -->
+                                <form action="" method="">
+
+                                    <!-- 공연장명 -->
+                                    <div class="form-group">
+                                        <!-- 공연장명 -->
+                                        <label class="form-text" for="">공연장명</label>
+                                        <input id="" type="text">
+                                    </div>
+                                    
+                                    <!-- 시설명 -->
+                                    <div class="form-group">
+										<label class="form-text" for="">시설명</label>
+                                        <input id="" type="text">
+                                    </div>
+
+                                    <!-- 공연장 주소 -->
+                                    <div class="form-group">
+                                        <label class="form-text" for="">공연장 주소</label>
+                                        <input id="" type="text"> <button type="button">우편번호찾기</button><br>
+                                        <input id="" type="text"><br>
+                                        <input id="" type="text">
+                                    </div>
+
+                                    <!-- 대표번호 -->
+                                    <div class="form-group">
+										<label class="form-text" for="">대표번호</label>
+                                        <input id="" type="text">
+                                    </div>
+                                    
+                                    <!-- 홈페이지 -->
+                                    <div class="form-group">
+										<label class="form-text" for="">홈페이지</label>
+                                        <input id="" type="text">
+                                    </div>
+                                    
+                                    <button id="" type="submit">공연장 등록</button>
+                                </form>
+
+                                <!-- //content body -->
+							</div>
+						</div>
+						<!-- //content body -->
+				
 					</div>
-					
-					
-					<div class="row">
-						<h3>전체공연</h3>
-					</div>
-					
-					<!-- 공연리스트 -->
-					<div class="row">
-						
-						<ul class="nav navbar-nav">
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-						</ul>
-					</div>
+					<!-- //content -->
 				</div>
 			
 				<div class="col-xs-1">오른쪽 공백</div>
@@ -231,6 +201,5 @@
 <script src="assets/js/jquery.countTo.min.js"></script>
 <script src="assets/js/jquery.shuffle.min.js"></script>
 <script src="assets/js/script.js"></script>
-
 
 </html>
