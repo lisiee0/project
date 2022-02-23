@@ -38,9 +38,8 @@
 <!-- 부트스트랩 Bootstrap core CSS -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-
 <style>
-	.poster {width: 270px;}
+	div {border: 1px solid black;}
 </style>
 
 
@@ -95,11 +94,6 @@
 		<!-- //navigation -->
 		
 		
-		<!-- 동영상자리 -->
-		<div>
-		
-		</div>
-		
 		
 		<div class="container-fluid">
 	
@@ -108,107 +102,94 @@
 				<div class="col-xs-1">왼쪽 공백</div>
 				
 				<div class="col-xs-10">
-					<div class="row">
-						<h3>추천공연</h3>
+			
+					<!-- aside -->
+					<div class="col-xs-3">
+						<div id="container" class="clearfix">
+							<div id="aside">
+								<h2>마이페이지</h2>
+								<ul>
+									<li><h3>예매내역</h3></li>
+									<li><a href="#">예매내역/취소</a></li>
+									<li><a href="#">취소알림 내역</a></li>
+								</ul>
+								<ul>
+									<li><h3>나의활동</h3></li>
+									<li><a href="#">후기관리</a></li>
+									<li><a href="#">문의내역</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
+					<!-- //aside -->
+				
+				
+					<!-- content -->
+					<div id="content" class="col-xs-9">
 					
-					<!-- 공연리스트 -->
-					<div class="row">
-					
-						<ul class="nav navbar-nav">
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-						</ul>
-						
+						<!-- content-head -->
+						<div id="content-head">
+							<h3>예매내역</h3>
+							<div id="location">
+								<ul>
+									<li>홈</li>
+									<li>예매내역/취소</li>
+									<li class="last">예매내역/취소</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- //content-head -->
+				
+						<!-- content body -->
+						<div id="board">
+							<div id="list">
+								<table>
+									<thead>
+										<tr>
+											<th>예매번호</th>
+											<th>예매일</th>
+											<th>상품명</th>
+											<th>관람일/매수</th>
+											<th>현재상태</th>
+											<th>관리</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>123</td>
+											<td>2020-12-23</td>
+											<td class="text-left"><a href="#">뮤지컬 라이온킹 오리지널 내한..</a></td>
+											<td>2020-12-23/2매</td>
+											<td>예매</td>
+											<td><button>취소</button></td>
+										</tr>
+		
+										<tr>
+											<td>123</td>
+											<td>2020-12-23</td>
+											<td class="text-left"><a href="#">뮤지컬 라이온킹 오리지널 내한..</a></td>
+											<td>2020-12-23/2매</td>
+											<td>예매</td>
+											<td><button>취소</button></td>
+										</tr>
+		
+										<tr>
+											<td>123</td>
+											<td>2020-12-23</td>
+											<td class="text-left"><a href="#">뮤지컬 라이온킹 오리지널 내한..</a></td>
+											<td>2020-12-23/2매</td>
+											<td>예매</td>
+											<td><button>취소</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- //content body -->
+				
 					</div>
-					
-					
-					<div class="row">
-						<h3>전체공연</h3>
-					</div>
-					
-					<!-- 공연리스트 -->
-					<div class="row">
-						
-						<ul class="nav navbar-nav">
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-						</ul>
-					</div>
+					<!-- //content -->
 				</div>
 			
 				<div class="col-xs-1">오른쪽 공백</div>
