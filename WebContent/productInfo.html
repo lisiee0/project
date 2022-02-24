@@ -218,6 +218,11 @@
 					<!-- 관람 후기 작성 -->
 					<div class="row">
 						<textarea>후기작성</textarea><br>
+						<span class="star">
+						  ★★★★★
+						  <span>★★★★★</span>
+						  <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+						</span>
 						<button type="button" class="btn btn-primary">등록</button>
 					</div>
 				
@@ -299,5 +304,14 @@
 <script src="assets/js/jquery.countTo.min.js"></script>
 <script src="assets/js/jquery.shuffle.min.js"></script>
 <script src="assets/js/script.js"></script>
+
+
+	<script>
+	
+	 const drawStar = (target) => {
+    document.querySelector(`.star span`).style.width = `${target.value * 10}%`;
+  }
+	 
+	</script>
 
 </html>
