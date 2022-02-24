@@ -5,47 +5,14 @@
 <title>TicketJava include</title>
 
 <!-- 기본 css -->
-<link href="assets/css/ticketjavaHome.css" rel="stylesheet" type="text/css">
-<link href="assets/css/include.css" rel="stylesheet" type="text/css">
-
-<!-- j쿼리 -->
-<script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
-<script class="u-script" type="text/javascript" src="assets/js/ticketjavaPresents.js" defer=""></script>
-
-<!-- navbar 동적 기능 엘리먼츠 -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="page_type" content="np-template-header-footer-from-plugin">
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
-
-<!-- 페이지 기본 구성요소 메타-->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- 모바일 페이지 메타 -->
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
-
-<!-- 구글 폰트셋 -->
-<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
-<!-- 파비콘 Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-ticketjava.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-ticketjava-icon.png">
+<link href="assets/bootstrap/css/productInfo.css" rel="stylesheet">
 
 <!-- 부트스트랩 Bootstrap core CSS -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-<style>
 
-	#mainPoster {width: 314px;}
-	th {width: 100px; font-size:20px;}
-	#posterArea {padding: 0px;}
-	div {border: 1px solid black;}
-	
-</style>
+<!-- j쿼리 -->
+<script class="u-script" type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
 
 </head>
 
@@ -103,20 +70,20 @@
 	
 			<div class="row">
 			
-				<div class="col-xs-1">왼쪽 공백</div>
+				<div class="col-md-1">왼쪽 공백</div>
 				
-				<div class="col-xs-10">
+				<div class="col-md-10">
 					<div class="row">
 						<h2>뮤지컬 <아이다> 인터네셔널 투어 </h2>
 					</div>
 						
 					<div class="row">
 						<!-- 포스터 width 314 height 418 -->
-						<div class="col-xs-3" id="posterArea">
+						<div class="col-md-3" id="posterArea">
 							<img id="mainPoster" src="/project/assets/image/aida.jpg">
 						</div>
 							
-						<div class="col-xs-6">
+						<div class="col-md-6">
 							<table id="infoTable">
 								<tr>
 									<th>장소</th>
@@ -161,7 +128,7 @@
 						</div>
 						
 						
-						<div class="col-xs-3">
+						<div class="col-md-3">
 							<!-- 캘린더 api 구현 위치 -->
 							캘린더 api <br>
 							<button type="button" class="btn btn-danger">예매하기</button>
@@ -181,7 +148,7 @@
 							<li><a href="">Q&A</a></li>
 						</ul>
 					</div>
-		
+
 			
 					<!-- 공연정보  jpg 파일노출 위치 -->
 					<div class="row">
@@ -218,11 +185,6 @@
 					<!-- 관람 후기 작성 -->
 					<div class="row">
 						<textarea>후기작성</textarea><br>
-						<span class="star">
-						  ★★★★★
-						  <span>★★★★★</span>
-						  <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
-						</span>
 						<button type="button" class="btn btn-primary">등록</button>
 					</div>
 				
@@ -231,10 +193,10 @@
 					<!-- 공연장정보 -->
 					<div class="row">
 						<h3>공연장 정보</h3>
-						<div class="col-xs-4">
+						<div class="col-md-4">
 							구글맵 api
 						</div>
-						<div class="col-xs-8">
+						<div class="col-md-8">
 							<p>[공연장 정보]</p><br>
 							<p>장소: 홍익대 대학로 아트센터 대극장</p><br>
 							<p>주소: 서울특별시 종로구 연건동 128-8 홍익대 대학로 아트센터</p><br>
@@ -284,7 +246,7 @@
 					</div>
 				</div>
 			
-				<div class="col-xs-1">오른쪽 공백</div>
+				<div class="col-md-1">오른쪽 공백</div>
 			</div>
 		</div>
 		
@@ -297,21 +259,5 @@
 </body>
 
 <!-- Bootstrap core JavaScript 페이지 로딩 향상을 위해 해당코드는 body가 끝나는곳에 둘것 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/jquery.slicknav.min.js"></script>
-<script src="assets/js/jquery.countTo.min.js"></script>
-<script src="assets/js/jquery.shuffle.min.js"></script>
-<script src="assets/js/script.js"></script>
-
-
-	<script>
-	
-	 const drawStar = (target) => {
-    document.querySelector(`.star span`).style.width = `${target.value * 10}%`;
-  }
-	 
-	</script>
 
 </html>
