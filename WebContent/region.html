@@ -4,44 +4,11 @@
 <meta charset="UTF-8">
 <title>TicketJava include</title>
 
-<!-- 기본 css -->
-<link href="assets/css/ticketjavaHome.css" rel="stylesheet" type="text/css">
-<link href="assets/css/include.css" rel="stylesheet" type="text/css">
-
-<!-- j쿼리 -->
-<script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
-<script class="u-script" type="text/javascript" src="assets/js/ticketjavaPresents.js" defer=""></script>
-
-<!-- navbar 동적 기능 엘리먼츠 -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="page_type" content="np-template-header-footer-from-plugin">
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
-
-<!-- 페이지 기본 구성요소 메타-->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- 모바일 페이지 메타 -->
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
-
-<!-- 구글 폰트셋 -->
-<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
-<!-- 파비콘 Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-ticketjava.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-ticketjava-icon.png">
-
 <!-- 부트스트랩 Bootstrap core CSS -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-<style>
-	div {border: 1px solid black;}
-	.poster {width: 270px;}
-</style>
+<!-- 기본 css -->
+<link href="assets/bootstrap/css/productInfo.css" rel="stylesheet">
 
 
 </head>
@@ -99,21 +66,22 @@
 	
 			<div class="row">
 			
-				<div class="col-xs-1">왼쪽 공백</div>
+				<div class="col-md-2"></div>
 				
-				<div class="col-xs-10">
-					<div class="row">
-						<div class="col-xs-3">
-							<h3>지역<small>서울/경기권</small></h3>
+				<div class="col-md-8">
+				
+					<div class="row section clearfix">
+						<div class="floatLeft">
+							<h2>지역<small>서울/경기권</small></h2>
 						</div>
 						
-						<div class="col-xs-9">
-							<ul class="nav navbar-nav navbar-right">
-								<li id="">전체</li>
-								<li id="">서울/경기</li>
-								<li id="">강원/충청</li>
-								<li id="">전라</li>
-								<li id="">경상/제주</li>
+						<div class="floatRight">
+							<ul class="nav navbar-nav">
+								<li class="regionList"><a href="">전체</a></li>
+								<li class="regionList"><a href="">서울/경기</a></li>
+								<li class="regionList"><a href="">강원/충청</a></li>
+								<li class="regionList"><a href="">전라</a></li>
+								<li class="regionList"><a href="">경상/제주</a></li>
 							</ul>
 						</div>
 					</div>
@@ -121,43 +89,43 @@
 					<div class="row">
 					
 						<ul class="nav navbar-nav">
-							<li id="imgArea">
+							<li class="imgArea">
 								<div>
-									<img class="poster" src="assets/image/aida.jpg">
+									<img class="region-poster" src="assets/image/aida.jpg">
 								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
-								</div>
-							</li>
-							
-							<li id="imgArea">
-								<div>
-									<img class="poster" src="assets/image/aida.jpg">
-								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
+								<div class="titlelocation">
+									<p class="text-center"><strong>아이다</strong></p>
+									<p class="text-center">세종문화회관 대극장</p>
 								</div>
 							</li>
 							
-							<li id="imgArea">
+							<li class="imgArea">
 								<div>
-									<img class="poster" src="assets/image/aida.jpg">
+									<img class="region-poster" src="assets/image/aida.jpg">
 								</div>
-								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
+								<div class="titlelocation">
+									<p class="text-center"><strong>아이다</strong></p>
+									<p class="text-center">세종문화회관 대극장</p>
 								</div>
 							</li>
 							
-							<li id="imgArea">
+							<li class="imgArea">
 								<div>
-									<img class="poster" src="assets/image/aida.jpg">
+									<img class="region-poster" src="assets/image/aida.jpg">
 								</div>
+								<div class="titlelocation">
+									<p class="text-center"><strong>아이다</strong></p>
+									<p class="text-center">세종문화회관 대극장</p>
+								</div>
+							</li>
+							
+							<li class="imgArea">
 								<div>
-									<p><strong>아이다</strong></p>
-									<p>세종문화회관 대극장</p>
+									<img class="region-poster" src="assets/image/aida.jpg">
+								</div>
+								<div class="titlelocation">
+									<p class="text-center"><strong>아이다</strong></p>
+									<p class="text-center">세종문화회관 대극장</p>
 								</div>
 							</li>
 						</ul>
@@ -165,7 +133,7 @@
 				
 				</div>
 			
-				<div class="col-xs-1">오른쪽 공백</div>
+				<div class="col-md-2"></div>
 			</div>
 		</div>
 		
@@ -177,13 +145,5 @@
 
 </body>
 
-<!-- Bootstrap core JavaScript 페이지 로딩 향상을 위해 해당코드는 body가 끝나는곳에 둘것 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/jquery.slicknav.min.js"></script>
-<script src="assets/js/jquery.countTo.min.js"></script>
-<script src="assets/js/jquery.shuffle.min.js"></script>
-<script src="assets/js/script.js"></script>
 
 </html>

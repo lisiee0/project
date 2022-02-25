@@ -100,3 +100,22 @@
 	width: 50px;
 }
 
+
+.imgArea .region-poster {
+	width: 207px;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	margin: 0px;
+	float: right;
+}
+
+.regionList {
+	font-size: 15px;
+	vertical-align: bottom;
+	margin: 38px 8px 0px 0px;
+}
