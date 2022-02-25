@@ -4,15 +4,12 @@
 <meta charset="UTF-8">
 <title>TicketJava include</title>
 
-<!-- 기본 css -->
-<link href="assets/bootstrap/css/productInfo.css" rel="stylesheet">
-
 <!-- 부트스트랩 Bootstrap core CSS -->
 <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
+<!-- 기본 css -->
+<link href="assets/bootstrap/css/productInfo.css" rel="stylesheet">
 
-<!-- j쿼리 -->
-<script class="u-script" type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
 
 </head>
 
@@ -70,20 +67,20 @@
 	
 			<div class="row">
 			
-				<div class="col-md-1">왼쪽 공백</div>
+				<div class="col-md-2">왼쪽 공백</div>
 				
-				<div class="col-md-10">
-					<div class="row">
+				<div class="col-md-8">
+					<div class="row section">
 						<h2>뮤지컬 <아이다> 인터네셔널 투어 </h2>
 					</div>
 						
-					<div class="row">
-						<!-- 포스터 width 314 height 418 -->
+					<div class="row section">
+						<!-- 포스터 width 250 height 418 -->
 						<div class="col-md-3" id="posterArea">
 							<img id="mainPoster" src="/project/assets/image/aida.jpg">
 						</div>
 							
-						<div class="col-md-6">
+						<div class="col-md-6" id="mainInfo">
 							<table id="infoTable">
 								<tr>
 									<th>장소</th>
@@ -102,24 +99,24 @@
 									<td>8세이상 관람가능</td>
 								</tr>
 								<tr>
-									<th>가격</th>
+									<th id="priceTag">가격</th>
 									<td>
-										<table border=1 id="priceTable">
+										<table id="priceTable">
 											<tr>
 												<td>VIP석</td>
-												<td><strong>150,000원</strong></td>
+												<td>150,000원</td>
 											</tr>
 											<tr>
 												<td>R석</td>
-												<td><strong>130,000원</strong></td>
+												<td>130,000원</td>
 											</tr>
 											<tr>
 												<td>S석</td>
-												<td><strong>100,000원</strong></td>
+												<td>100,000원</td>
 											</tr>
 											<tr>
 												<td>A석</td>
-												<td><strong>70,000원</strong></td>
+												<td>70,000원</td>
 											</tr>	
 										</table>
 									</td>
@@ -128,17 +125,17 @@
 						</div>
 						
 						
-						<div class="col-md-3">
+						<div class="col-md-3" id="calArea">
 							<!-- 캘린더 api 구현 위치 -->
-							캘린더 api <br>
-							<button type="button" class="btn btn-danger">예매하기</button>
+							<img id="cal" src="/project/assets/image/cal.png">
+							<button type="button" class="btn btn-primary btn-block">예매하기</button>
 						</div>
 							
 					</div>
 						
 						
 					<!-- 공연상세 네비게이션바 -->
-					<div class="row">
+					<div class="row section">
 						<ul class="nav navbar-nav">
 							<li><a href="">공연정보</a></li>
 							<li><a href="">캐스팅정보</a></li>
@@ -151,17 +148,21 @@
 
 			
 					<!-- 공연정보  jpg 파일노출 위치 -->
-					<div class="row">
-						공연정보.jpg 위치
+					<div class="row section">
+						<p>공연정보</p>
+						<img src="">
+						<p>캐스팅정보</p>
+						<img src="">
+						<p>부가정보</p>
 						<img src="">
 					</div>
 						
 						
 					<!-- 관람 후기 -->
-					<div class="row">
-						<h3>관람후기</h3>
-						<table>
-							<tr>
+					<div class="row section">
+						<h4>관람후기</h4>
+						<table class="table infoTable">
+							<tr class="info">
 								<th>내용</th>
 								<th>작성자</th>
 								<th>작성일</th>
@@ -177,37 +178,37 @@
 								<td>22-02-24</td>
 							</tr>
 						</table>
-						<button type="button" class="btn btn-primary">후기작성</button>
+						<button type="button" class="btn btn-primary position">후기작성</button>
 					</div>
 						
 						
 						
 					<!-- 관람 후기 작성 -->
-					<div class="row">
-						<textarea>후기작성</textarea><br>
-						<button type="button" class="btn btn-primary">등록</button>
+					<div class="row section">
+						<textarea class="form-control">후기작성</textarea><br>
+						<button type="button" class="btn btn-primary position">등록</button>
 					</div>
 				
 						
 						
 					<!-- 공연장정보 -->
-					<div class="row">
-						<h3>공연장 정보</h3>
+					<div class="row section">
+						<h4>공연장 정보</h4>
 						<div class="col-md-4">
-							구글맵 api
+							<img id="map" src="/project/assets/image/map.png">
 						</div>
 						<div class="col-md-8">
-							<p>[공연장 정보]</p><br>
-							<p>장소: 홍익대 대학로 아트센터 대극장</p><br>
-							<p>주소: 서울특별시 종로구 연건동 128-8 홍익대 대학로 아트센터</p><br>
-							<p>대표번호: 02-1234-1234</p><br>
+							<p>[공연장 정보]</p>
+							<p>장소: 홍익대 대학로 아트센터 대극장<br>
+							주소: 서울특별시 종로구 연건동 128-8 홍익대 대학로 아트센터<br>
+							대표번호: 02-1234-1234</p>
 						</div>
 					</div>
 						
 						
 					<!-- 예매/취소 안내 -->
-					<div class="row">
-						<h3>예매/취소 안내</h3>
+					<div class="row section">
+						<h4>예매/취소 안내</h4>
 						<p>것이 따뜻한 봄바람이다 인생에 따뜻한 봄바람을 불어 보내는 것은 청춘의 끓는 피다 청춘의 피가 뜨거운지라<br>
 						인간의 동산에는 사랑의 풀이 돋고 이상의 꽃이 피고 희망의 놀이 뜨고 열락의 새가 운다사랑의 풀이 없으면 인간은</p>
 					</div>
@@ -215,10 +216,10 @@
 					
 					
 					<!-- Q&A -->
-					<div class="row">
-						<h3>Q&A</h3>
-						<table>
-							<tr>
+					<div class="row section">
+						<h4>Q&A</h4>
+						<table class="table infoTable">
+							<tr class="info">
 								<th>내용</th>
 								<th>작성자</th>
 								<th>작성일</th>
@@ -234,19 +235,18 @@
 								<td>22-02-22</td>
 							</tr>
 						</table>
-						<button type="button" class="btn btn-primary">문의하기</button>
+						<button type="button" class="btn btn-primary position">문의하기</button>
 					</div>
 					
-					
-					
-					<!-- 관람 후기 작성 -->
-					<div class="row">
-						<textarea>문의내용</textarea><br>
-						<button type="button" class="btn btn-primary">등록</button>
+
+					<!-- Q&A 작성 -->
+					<div class="row section">
+						<textarea class="form-control">문의내용</textarea><br>
+						<button type="button" class="btn btn-primary position">등록</button>
 					</div>
 				</div>
 			
-				<div class="col-md-1">오른쪽 공백</div>
+				<div class="col-md-2">오른쪽 공백</div>
 			</div>
 		</div>
 		
@@ -258,6 +258,5 @@
 
 </body>
 
-<!-- Bootstrap core JavaScript 페이지 로딩 향상을 위해 해당코드는 body가 끝나는곳에 둘것 -->
 
 </html>
