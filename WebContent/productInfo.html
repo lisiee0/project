@@ -8,6 +8,7 @@
 <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <!-- 기본 css -->
+<link href="assets/css/ticketjavaCommon.css" rel="stylesheet" type="text/css">
 <link href="assets/bootstrap/css/productInfo.css" rel="stylesheet">
 
 
@@ -18,48 +19,63 @@
 	<div id="wrap">
 		
 		<!-- header -->
-		<div id="header" class="clearfix">
-			<h1>
-				<a href=""><img src="assets/image/ticketjava-logo.png"></a>
-			</h1>
+		<div class="row">
+			<div class="col-md-10">로그인 헤더.col-md-10자리</div>
+			<div class="col-md-2">
+				<div id="header" class="clearfix">
+					<ul>
+						<li><a href="#"><img src="assets/image/bell-normal.png"></a></li>
+						<li><a href="#"><img src="assets/image/bell-new.png"></a></li>
 
-			<ul class="clearfix">
-				<li><a href="#"><img src="assets/image/bell-normal.png"></a></li>
-				<li><a href="#"><img src="assets/image/bell-new.png"></a></li>
-
-				<li><a href="#">로그인</a></li>
-				<li><a href="#">회원가입</a></li>
-			</ul>
-		</div>
-		<!-- //header -->
-		
-		
-		<!-- navigation -->
-		<nav id="primary-navigation" class="site-navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="site-title"><img src=""></a>
-				</div>
-				<!-- /.navbar-header -->
-
-				<div class="collapse navbar-collapse" id="agency-navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="index.html" data-toggle="dropdown">뮤지컬</a></li>
-						<li><a href="theater.html">연극</a></li>
-						<li><a href="#">콘서트</a></li>
-						<li><a href="sports.html">스포츠</a></li>
-						<li><a href="#">전시</a></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">공연장 <i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-								<li><a href="#">지역</a></li>
-								<li><a href="#">공연장</a></li>
-							</ul></li>
-						<li><a href="#">랭킹</a></li>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
 					</ul>
 				</div>
 			</div>
+
+		</div>
+		<!-- //header -->
+		
+		<!-- 로고 검색자리 4 4 4그리드 -->
+		<div class="row">
+			<div class="col-md-4">
+				<div id="header" class="container-fluid clearfix">
+					<h1>
+						<a href=""><img src="assets/image/ticketjava-logo.png"></a>
+					</h1>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<nav class="navbar navbar-expand-md navbar-dark">
+					<div id="searchBar" class="container-fluid">
+						<form class="d-flex">
+							<input class="form-control me-sm-2" type="text" placeholder="Search">
+							<button class="btn btn-secondary my-2 my-sm-0" type="submit">티켓잡으러 검색</button>
+						</form>
+					</div>
+				</nav>
+
+			</div>
+			<div class="col-md-4">col-md-4 헤더 로고자리 공백</div>
+		</div>
+		<!-- 로고 검색자리 종료 -->
+		
+		<!-- 네비바 자리 그리드없음 중앙 정렬 -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div id="navbar" class="container-fluid" role="navigation">
+				<ul class="clearfix">
+					<li class="nav-item"><a href="">뮤지컬</a></li>
+					<li class="nav-item"><a href="">연극</a></li>
+					<li class="nav-item"><a href="">콘서트</a></li>
+					<li class="nav-item"><a href="">스포츠</a></li>
+					<li class="nav-item"><a href="">전시</a></li>
+					<li class="nav-item"><a href="">공연장</a></li>
+					<li class="nav-item"><a href="">지역</a></li>
+					<li class="nav-item"><a href="">랭킹</a></li>
+				</ul>
+			</div>
 		</nav>
-		<!-- //navigation -->
+		<!-- 네비바 종료 -->
 		
 		
 		
@@ -250,8 +266,9 @@
 			</div>
 		</div>
 		
-	<div id="footer">푸터가 들어갈 자리</div>
-	<!-- //footer -->
+		<!-- 푸터 시작 -->
+		<div id="footer">푸터가 들어갈 자리</div>
+		<!-- 푸터 종료 -->
 
 	</div>
 	<!-- //wrap -->
