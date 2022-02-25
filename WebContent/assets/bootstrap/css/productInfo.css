@@ -59,7 +59,7 @@
 
 .section {
 	border-bottom: 1.6px #6697f2 solid;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 .position {
@@ -68,31 +68,35 @@
 }
 
 /****************************/
-#imgArea {
+.imgArea {
 	margin: 0px 46px 0px 0px;
 }
 
-#imgArea .poster {
+.imgArea .poster {
 	width: 207px;
 }
 
-#imgArea .text-center {
+.imgArea .text-center {
 	margin: 3px 0px 5px 0px;
 }
 
-#imgArea .rank-poster {
-	width: 200px;
+.imgArea .rank-poster {
+	width: 158px;
 }
 
-#rankingTable th {
+.rankingTable {
+	margin-bottom: 20px;
+}
+
+
+.rankingTable th {
 	font-size: 25px;
 	text-align: left;
 	vertical-align: top;
-	width: 150px;
-	border-right: 1px solid #a2a2a2;
+	width: 100px;
 }
 
-#rankingTable .nextBtn {
-	width: 70px;
+.rankingTable .nextBtn {
+	width: 50px;
 }
 
