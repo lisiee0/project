@@ -4,61 +4,80 @@
 <meta charset="UTF-8">
 <title>TicketJava include</title>
 
-<!-- 기본 css -->
-
 <!-- 부트스트랩 Bootstrap core CSS -->
-<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="assets/bootstrap/bootstrap/bootstrap.css" rel="stylesheet">
+
+<!-- 기본 css -->
+<link href="assets/css/ticketjavaCommon.css" rel="stylesheet" type="text/css">
+
+<!-- 개인 css -->
+<link href="assets/css/indcom.css" rel="stylesheet">
+<link href="assets/css/admin.css" rel="stylesheet">
 
 
 </head>
-
 
 <body>
 	<div id="wrap">
 		
 		<!-- header -->
-		<div id="header" class="clearfix">
-			<h1>
-				<a href=""><img src="assets/image/ticketjava-logo.png"></a>
-			</h1>
+		<div class="row">
+			<div class="col-md-10"></div>
+			<div class="col-md-2">
+				<div id="header" class="clearfix">
+					<ul>
+						<li><a href="#"><img src="assets/image/bell-normal.png"></a></li>
+						<li><a href="#"><img src="assets/image/bell-new.png"></a></li>
 
-			<ul class="clearfix">
-				<li><a href="#"><img src="assets/image/bell-normal.png"></a></li>
-				<li><a href="#"><img src="assets/image/bell-new.png"></a></li>
-
-				<li><a href="#">로그인</a></li>
-				<li><a href="#">회원가입</a></li>
-			</ul>
-		</div>
-		<!-- //header -->
-		
-		
-		<!-- navigation -->
-		<nav id="primary-navigation" class="site-navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="site-title"><img src=""></a>
-				</div>
-				<!-- /.navbar-header -->
-
-				<div class="collapse navbar-collapse" id="agency-navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="index.html" data-toggle="dropdown">뮤지컬</a></li>
-						<li><a href="theater.html">연극</a></li>
-						<li><a href="#">콘서트</a></li>
-						<li><a href="sports.html">스포츠</a></li>
-						<li><a href="#">전시</a></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">공연장 <i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-								<li><a href="#">지역</a></li>
-								<li><a href="#">공연장</a></li>
-							</ul></li>
-						<li><a href="#">랭킹</a></li>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
 					</ul>
 				</div>
 			</div>
+
+		</div>
+		<!-- //header -->
+		
+		<!-- 로고 검색자리 4 4 4그리드 -->
+		<div class="row">
+			<div class="col-md-4">
+				<div id="header" class="container-fluid clearfix">
+					<h1>
+						<a href=""><img src="assets/image/ticketjava-logo.png"></a>
+					</h1>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<nav class="navbar navbar-expand-md navbar-dark">
+					<div id="searchBar" class="container-fluid">
+						<form class="d-flex">
+							<input class="form-control me-sm-2" type="text" placeholder="Search">
+							<button class="btn btn-secondary my-2 my-sm-0" type="submit">티켓잡으러 검색</button>
+						</form>
+					</div>
+				</nav>
+
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<!-- 로고 검색자리 종료 -->
+		
+		<!-- 네비바 자리 그리드없음 중앙 정렬 -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div id="navbar" class="container-fluid" role="navigation">
+				<ul class="clearfix">
+					<li class="nav-item"><a href="">뮤지컬</a></li>
+					<li class="nav-item"><a href="">연극</a></li>
+					<li class="nav-item"><a href="">콘서트</a></li>
+					<li class="nav-item"><a href="">스포츠</a></li>
+					<li class="nav-item"><a href="">전시</a></li>
+					<li class="nav-item"><a href="">공연장</a></li>
+					<li class="nav-item"><a href="">지역</a></li>
+					<li class="nav-item"><a href="">랭킹</a></li>
+				</ul>
+			</div>
 		</nav>
-		<!-- //navigation -->
+		<!-- 네비바 종료 -->
 		
 		
 		
@@ -66,19 +85,18 @@
 	
 			<div class="row">
 			
-				<div class="col-md-1">왼쪽 공백</div>
+				<div class="col-md-2"></div>
 				
-				<div class="col-md-10">
-					
-					<div class="row">
+				<div class="col-md-8">
+			
 					<!-- aside -->
 					<div class="col-md-3">
 						<div id="container" class="clearfix">
-							<div id="aside">
-								<h2>관리페이지</h2>
+							<div id="admin-aside">
+								<h2 class="admin-pageMenu">관리페이지</h2>
 								<ul>
-									<li><h3>공연장 목록</h3></li>
-									<li><h3>공연장 공지사항</h3></li>
+									<li class="currentPage">공연장 목록</li>
+									<li>공연장 공지사항</li>
 								</ul>
 							</div>
 						</div>
@@ -91,51 +109,53 @@
 					
 						<!-- content-head -->
 						<div id="content-head">
-							<div class="row">
+							<div id="content-title" class="col-md-12 section">
 								<h3>공연장 공지사항 등록</h3>
 							</div>
-
 						</div>
 						<!-- //content-head -->
 				
 						<!-- content body -->
 						<div id="board">
 						
-                            <div id="add">
-                                <!-- form -->
-                                <form action="" method="">
+							<form action="" method="" class="form-horizontal">
 
-                                    <!-- 공연장명 -->
-                                    <div class="form-group">
-                                        <!-- 공연장명 -->
-                                        <label class="form-label mt-4" for="">공연장</label>
-                                        <select class="form-select"><option>공연장이름</option></select>
-                                    </div>
-                                    
-                                    <!-- 시설명 -->
-                                    <div class="form-group">
-										<label class="form-text" for="">공지사항</label>
-                                        <input id="" type="text">
-                                    </div>
+   								<!-- 공연장명 -->
+								<div class="form-group">
+								    <label class="form-text col-md-2" for="">공연장</label>
+								    <div class="col-md-8">
+								    	<select class="form-control"><option>공연장이름</option></select>
+								    </div>
+								</div>
 
-									<button id="" type="submit">공지사항 등록</button>
-                                </form>
-
-                                <!-- //content body -->
-							</div>
+								<!-- 시설명 -->
+								<div class="form-group">
+									<label class="form-text col-md-2" for="">공지사항</label>
+									<div class="col-md-8">
+								    	<input type="text" class="form-control" id="" placeholder="공지사항을 입력하세요">
+								    </div>
+								</div>
+								
+								<div id="btnLocation">
+                          			<button type="submit" class="btn btn-primary" id="addbtn">공지사항 등록</button>
+                          		</div>
+	                      </form>
+							
 						</div>
-						<!-- //content body -->
-				
+						<!-- // content body -->
+						
 					</div>
 					<!-- //content -->
 				</div>
-				</div>
-				<div class="col-md-1">오른쪽 공백</div>
+				
+				<div class="col-md-2"></div>
 			</div>
+				
+				
 		</div>
 		
-	<div id="footer">푸터가 들어갈 자리</div>
-	<!-- //footer -->
+		<div id="footer">푸터가 들어갈 자리</div>
+		<!-- //footer -->
 
 	</div>
 	<!-- //wrap -->
