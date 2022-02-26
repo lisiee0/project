@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+#map {width: 337px;}
+#posterArea, #calArea, #mapArea {padding: 0px;}
+
 .section {
 	border-bottom: 1.6px #6697f2 solid;
 	padding-bottom: 10px;
