@@ -10,16 +10,6 @@
 
 #posterArea, #calArea, #mapArea {padding: 0px;}
 
-.pageMenu {
-	font-size: 31px;
-	margin: 0px 0px 10px 0px;
-}
-
-.cateMenu {
-	font-size: 19px;
-	margin: 0px 0px 8px 0px;
-}
-
 #infoPic, #mapInfo {
 	padding: 0px 0px 20px 0px;
 }
