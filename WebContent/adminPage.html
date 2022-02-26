@@ -41,22 +41,22 @@
 		<!-- 로고 검색자리 4 4 4그리드 -->
 		<div class="row">
 			<div class="col-md-4">
-				<div id="header" class="container-fluid clearfix">
+				<div class="container-fluid clearfix" id="ticketJavaLogo">
 					<h1>
-						<a href=""><img src="assets/image/ticketjava-logo.png"></a>
+						<a href=""><img src="assets/image/index/ticketjava-logo.png"></a>
 					</h1>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<nav class="navbar navbar-expand-md navbar-dark">
-					<div id="searchBar" class="container-fluid">
-						<form class="d-flex">
-							<input class="form-control me-sm-2" type="text" placeholder="Search">
-							<button class="btn btn-secondary my-2 my-sm-0" type="submit">티켓잡으러 검색</button>
-						</form>
+			<div class="col-md-4"  id="serachBar">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="sr-only" for="ticketSearch">ticketSearch</label>
+						<div class="input-group">
+							<input type="text" class="form-control" id="ticketSearch" placeholder="내가 찾는 티켓은.." value="">
+						</div>
 					</div>
-				</nav>
-
+					<button type="submit" class="btn btn-primary">티켓잡으러검색</button>
+				</form>
 			</div>
 			<div class="col-md-4"></div>
 		</div>
