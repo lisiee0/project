@@ -106,18 +106,21 @@
 }
 
 .productInfo {
-	box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
+	background-color: #f6f6f6;
 	width: 237px;
+	height: 100px;
 }
 
 .productInfo .title {
-	font-size: 14px;
+	font-size: 15px;
+	font-weight: bolder;
 }
 
 .list-width {
 	width: 237px;
-	margin: 0px 15px 0px 0px;
+	margin: 0px 17px 17px 0px;
 }
 .last {
-	margin: 0px 0px 2px 0px;
+	margin: 0px 0px 0px 1px;
 }
