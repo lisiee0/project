@@ -4,6 +4,11 @@
 /* info */
 /**********************************************/
 
+.fixwidth {
+	width: 1000px;
+	padding: 0px;
+}
+
 #mainPoster {width: 250px;}
 #cal {width: 253px;}
 
@@ -54,25 +59,24 @@
 }
 
 .imgArea {
-	margin: 0px 46px 0px 0px;
+	width: 237px;
 }
 
 .imgArea .poster {
-	width: 207px;
-}
-
-.imgArea .text-center {
-	margin: 3px 0px 5px 0px;
+	width: 237px;
 }
 
 .imgArea .rank-poster {
 	width: 158px;
 }
 
+.imgArea .region-poster {
+	width: 207px;
+}
+
 .rankingTable {
 	margin-bottom: 20px;
 }
-
 
 .rankingTable th {
 	font-size: 25px;
@@ -85,10 +89,6 @@
 	width: 50px;
 }
 
-
-.imgArea .region-poster {
-	width: 207px;
-}
 
 .floatLeft {
 	float: left;
@@ -105,3 +105,19 @@
 	margin: 14px 10px 0px 0px;
 }
 
+.productInfo {
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+	width: 237px;
+}
+
+.productInfo .title {
+	font-size: 14px;
+}
+
+.list-width {
+	width: 237px;
+	margin: 0px 15px 0px 0px;
+}
+.last {
+	margin: 0px 0px 2px 0px;
+}
