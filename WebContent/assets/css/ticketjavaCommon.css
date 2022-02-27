@@ -18,11 +18,14 @@ body	{font-family: 'Noto Sans KR', sans-serif; font-size:12px; color: #333; back
 
 /* 해더(header: 로고, 로그인관련 버튼) */
 #header	h1 {font-size: 36px; font-weight: bold; line-height: 1.1;}
-#header	h1>a {float: left; margin: 10px 0px 0px 0px; font-size: 35px; color:#79B30B; }
-#header ul {float: left;  }
+#header	h1>a {float: right; margin: 10px 0px 0px 0px; font-size: 35px; color:#79B30B; }
+#header ul {float: right;  }
 #header ul>li {list-style:none; padding-left:0px; /* 로그인 리스트 블릿마크 제거 */
 				float: left; margin: 25px 0px 0px 10px;}
 #header ul>li .btn_s {padding: 4px 6px 4px 6px; border: 1px solid #bfbfbf; border-radius: 2px; font-size: 10px; }
+
+/* 헤더 네비바의 규격 */
+.container {width:1000px}
 
 /* 검색창 (로고 옆 네비바 위) */
 #serachBar{
@@ -30,7 +33,7 @@ body	{font-family: 'Noto Sans KR', sans-serif; font-size:12px; color: #333; back
 }
 
 #serachBar input{
-	width:300px;
+	width:150px;
 	height:40px;
 	margin-left:50px;
 }
@@ -43,6 +46,9 @@ body	{font-family: 'Noto Sans KR', sans-serif; font-size:12px; color: #333; back
 	margin-bottom:15px;
 }
 
+/* 네비바가 있는 곳에 브라우저 전체 파란줄 */
+.navbox {background-color:#6697f2; }
+
 /* 네비(nav: 메인메뉴) */
 #navbar  ul{
 	height:45px;
@@ -50,8 +56,10 @@ body	{font-family: 'Noto Sans KR', sans-serif; font-size:12px; color: #333; back
 }
 
 #navbar  ul>li {float: center; text-align:left; justify-content:flex; align-items:center; 
-				padding: 0px 10px 0px 20px; margin: 10px 30px 0px 30px; font-size: 19px; font-weight: bold;	display:inline;}
+				padding: 0px 30px 0px 20px; margin: 10px 30px 0px 0px; font-size: 20px; font-weight: bold;	display:inline;}
 #navbar {text-align:center}
+
+
 
 .nav-item {
     padding: 15px;
@@ -69,6 +77,9 @@ body	{font-family: 'Noto Sans KR', sans-serif; font-size:12px; color: #333; back
 
 /* 푸터(footer) */
 #footer {line-height: 50px; margin: 30px 0px 0px 0px; }
+/* 푸터가 있는 곳에 브라우저 전체 파란줄 */
+.footerbox {background-color:#dddddd; }
+
 
 /****************** 공통 ************************/
 /* clearfix */
