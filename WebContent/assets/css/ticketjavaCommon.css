@@ -84,6 +84,7 @@ div.nav{
 .nav-item a { /*nav-item 클래스 아래의 a 요소를 선택함*/
     color: white;
 }
+
 .nav-item a:hover{
 	color:white;
 	text-decoration:none;
@@ -91,7 +92,7 @@ div.nav{
 
 
 /* 푸터(footer) */
-/* #footer {line-height: 50px; margin: 30px 0px 0px 0px; } */
+
 /* 푸터가 있는 곳에 브라우저 전체 파란줄 */
 .footerbox {background-color:#dddddd; }
 
@@ -105,5 +106,4 @@ div.nav{
 .dis {display: inline-block;}
 .zp {padding: 0px;}
 .vm {vertical-align: middle;}
-
 
