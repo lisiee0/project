@@ -176,3 +176,8 @@
 	padding: 20px 15px 15px 15px;
 	margin: 0px 0px 15px 0px;
 }
+
+.logoArea, .theater-logo {
+	width: 150px;
+	height: 100px;
+}
