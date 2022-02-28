@@ -101,6 +101,7 @@
 
 
 .floatLeft {
+	width: 300px;
 	float: left;
 }
 
@@ -110,9 +111,12 @@
 }
 
 .regionList {
+	list-style: none;
+	float: left;
 	font-size: 15px;
 	vertical-align: bottom;
-	margin: 14px 10px 0px 0px;
+	padding: 12px 0px 0px 0px;
+	margin: 10px 0px 0px 15px;
 }
 
 .productInfo {
