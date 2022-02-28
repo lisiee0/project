@@ -150,12 +150,12 @@
 						<div class="row">
 
 						<ul class="nav navbar-nav">
-							<li><a href="">공연정보</a></li>
-							<li><a href="">캐스팅정보</a></li>
-							<li><a href="">부가정보</a></li>
-							<li><a href="">관람후기</a></li>
-							<li><a href="">기대평</a></li>
-							<li><a href="">Q&A</a></li>
+							<li class="scroll"><a href="">공연정보</a></li>
+							<li class="scroll"><a href="">캐스팅정보</a></li>
+							<li class="scroll"><a href="">부가정보</a></li>
+							<li class="scroll"><a href="">관람후기</a></li>
+							<li class="scroll"><a href="">기대평</a></li>
+							<li class="scroll"><a href="">Q&A</a></li>
 						</ul>
 	
 						</div>
@@ -179,9 +179,110 @@
 					</div>
 					
 					
+					<!-- 관람후기 -->
+					<div class="container">
+						<div class="row">
+							<h4 class="cateMenu">관람후기</h4>
+							<table class="table review-qna">
+								<colgroup>
+									<col width="60%">
+									<col width="20%">
+									<col width="20%">
+								</colgroup>
+								<tr class="info">
+									<th>내용</th>
+									<th>작성자</th>
+									<th>작성일</th>
+								</tr>
+								<tr>
+									<td>중학생 때 A석 먼 발치에서 보고 감동받아 지금 뮤지컬배우의 꿈을 꾸게 되었네요.<br>
+										그 이후로 아이다를 보지 못했는데, 19년도에 그랜드파이널을 놓치고 너무 아쉬운 마음이 가득이었습니다.</td>
+									<td>abcdefg</td>
+									<td>22-02-22</td>
+								</tr>
+								<tr>
+									<td>다시보고싶습니다</td>
+									<td>dasdasd</td>
+									<td>22-02-24</td>
+								</tr>
+							</table>
+							<button type="button" class="btn btn-primary position">후기작성</button>
+
+						</div>
+					</div>
+					
+					<!-- 후기작성 -->
+					<div class="container bgc">
+						<div class="row">
+							<textarea class="form-control" id="review" placeholder="후기를 남겨주세요"></textarea><br>
+							<button type="button" class="btn btn-primary position">등록</button>
+						</div>
+					</div>
 					
 					
+					<!-- 공연장 정보 -->
+					<div class="container section">
+						<div class="row">
+							<h4 class="cateMenu">공연장 정보</h4>
+							<div id="mapArea" class="col-md-4">
+								<img id="map" src="/project/assets/image/map.png">
+							</div>
+							<div class="col-md-8">
+								<p><strong>[공연장 정보]</strong></p><br>
+								<p>장소: 홍익대 대학로 아트센터 대극장</p>
+								<p>주소: 서울특별시 종로구 연건동 128-8 홍익대 대학로 아트센터</p>
+								<p>대표번호: 02-1234-1234</p>
+							</div>
+						</div>
+					</div>
 					
+					
+					<!-- 예매/취소 안내 -->
+					<div class="container section">
+						<div class="row">
+							<h4 class="cateMenu">예매/취소 안내</h4>
+							<p>예매 취소 시 주의사항<p>
+							<p>티켓 예매 후 7일 이내에 취소 시, 취소수수료가 없습니다.</p>
+							<p>단, 예매 후 7일 이내라도 취소 시점이 공연일로부터 10일 이내라면 그에 해당하는 취소수수료가 부과됩니다.</p>
+							<p>예매 당일 자정(12:00) 전에 취소할 경우 예매 수수료가 환불되며, 그 이후에는 환불되지 않습니다.</p>
+							<p>예매티켓 취소는 아래 안내된 취소가능일 이내에만 할 수 있습니다.</p>
+						</div>
+					</div>
+					
+					
+					<!-- QnA -->
+					<div class="container section">
+						<div class="row">
+							<h4 class="cateMenu">Q&A</h4>
+							<table class="table review-qna">
+								<tr class="info">
+									<th>내용</th>
+									<th>작성자</th>
+									<th>작성일</th>
+								</tr>
+								<tr>
+									<td>문의합니다.</td>
+									<td>abcdefg</td>
+									<td>22-02-22</td>
+								</tr>
+								<tr>
+									<td>문의합니다.</td>
+									<td>werwer</td>
+									<td>22-02-22</td>
+								</tr>
+							</table>
+							<button type="button" class="btn btn-primary position">문의하기</button>
+						</div>
+					</div>
+					
+									
+					<!-- 문의작성 -->
+					<div class="container bgc">
+						<div class="row">
+							<textarea class="form-control" id="qna" placeholder="문의를 남겨주세요"></textarea><br>
+							<button type="button" class="btn btn-primary position">등록</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -198,172 +299,5 @@
 	</div> <!-- wrap 종료 -->
 	
 </body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-		
-		
-						
-					
-						
-
-
-			
-					<!-- 공연정보  jpg 파일노출 위치 -->
-					<div id="infoPic" class="row section">
-						<p>공연정보</p>
-						<img src="/project/assets/image/info1.png">
-						<p>캐스팅정보</p>
-						<img src="/project/assets/image/info2.png">
-						<p>부가정보</p>
-						<img src="/project/assets/image/info3.png">
-					</div>
-						
-						
-					<!-- 관람 후기 -->
-					<div class="row section">
-						<h4 class="cateMenu">관람후기</h4>
-						<table class="table infoTable">
-							<colgroup>
-								<col width="60%">
-								<col width="20%">
-								<col width="20%">
-							</colgroup>
-							<tr class="info">
-								<th>내용</th>
-								<th>작성자</th>
-								<th>작성일</th>
-							</tr>
-							<tr>
-								<td>중학생 때 A석 먼 발치에서 보고 감동받아 지금 뮤지컬배우의 꿈을 꾸게 되었네요.<br>
-									그 이후로 아이다를 보지 못했는데, 19년도에 그랜드파이널을 놓치고 너무 아쉬운 마음이 가득이었습니다.</td>
-								<td>abcdefg</td>
-								<td>22-02-22</td>
-							</tr>
-							<tr>
-								<td>다시보고싶습니다</td>
-								<td>dasdasd</td>
-								<td>22-02-24</td>
-							</tr>
-						</table>
-						<button type="button" class="btn btn-primary position">후기작성</button>
-					</div>
-						
-						
-						
-					<!-- 관람 후기 작성 -->
-					<div class="row section">
-						<textarea class="form-control">후기작성</textarea><br>
-						<button type="button" class="btn btn-primary position">등록</button>
-					</div>
-				
-						
-						
-					<!-- 공연장정보 -->
-					<div id="mapInfo" class="row section">
-						<h4 class="cateMenu">공연장 정보</h4>
-						<div id="mapArea" class="col-md-4">
-							<img id="map" src="/project/assets/image/map.png">
-						</div>
-						<div class="col-md-8">
-							<p>[공연장 정보]</p><br>
-							<p>장소: 홍익대 대학로 아트센터 대극장<br>
-							주소: 서울특별시 종로구 연건동 128-8 홍익대 대학로 아트센터<br>
-							대표번호: 02-1234-1234</p>
-						</div>
-					</div>
-						
-						
-					<!-- 예매/취소 안내 -->
-					<div class="row section">
-						<h4 class="cateMenu">예매/취소 안내</h4>
-						<p>것이 따뜻한 봄바람이다 인생에 따뜻한 봄바람을 불어 보내는 것은 청춘의 끓는 피다 청춘의 피가 뜨거운지라<br>
-						인간의 동산에는 사랑의 풀이 돋고 이상의 꽃이 피고 희망의 놀이 뜨고 열락의 새가 운다사랑의 풀이 없으면 인간은</p>
-					</div>
-					
-					
-					
-					<!-- Q&A -->
-					<div class="row section">
-						<h4 class="cateMenu">Q&A</h4>
-						<table class="table infoTable">
-							<tr class="info">
-								<th>내용</th>
-								<th>작성자</th>
-								<th>작성일</th>
-							</tr>
-							<tr>
-								<td>문의합니다.</td>
-								<td>abcdefg</td>
-								<td>22-02-22</td>
-							</tr>
-							<tr>
-								<td>문의합니다.</td>
-								<td>werwer</td>
-								<td>22-02-22</td>
-							</tr>
-						</table>
-						<button type="button" class="btn btn-primary position">문의하기</button>
-					</div>
-					
-
-					<!-- Q&A 작성 -->
-					<div class="row section">
-						<textarea class="form-control">문의내용</textarea><br>
-						<button type="button" class="btn btn-primary position">등록</button>
-					</div>
-				</div>
-			
-				<div class="col-md-2"></div>
-			</div>
-		</div>
-		
-		<!-- 푸터 시작 -->
-		<div id="footer">푸터가 들어갈 자리</div>
-		<!-- 푸터 종료 -->
-
-	</div>
-	<!-- //wrap -->
-
-</body>
-
 
 </html>
