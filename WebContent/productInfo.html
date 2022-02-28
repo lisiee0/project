@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <title>TicketJava include</title>
 
-
 <!-- 부트스트랩 Bootstrap core CSS -->
-<link href="assets/bootstrap/bootstrap/bootstrap.css" rel="stylesheet">
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <!-- 기본 css -->
 <link href="assets/css/ticketjavaCommon.css" rel="stylesheet" type="text/css">
@@ -15,84 +14,195 @@
 <link href="assets/css/indcom.css" rel="stylesheet">
 <link href="assets/css/productInfo.css" rel="stylesheet">
 
-
 </head>
-
 
 <body>
 	<div id="wrap">
-		
-		<!-- header -->
-		<div class="row">
-			<div class="col-md-10"></div>
-			<div class="col-md-2">
-				<div id="header" class="clearfix">
-					<ul>
-						<li><a href="#"><img src="assets/image/bell-normal.png"></a></li>
-						<li><a href="#"><img src="assets/image/bell-new.png"></a></li>
-
-						<li><a href="#">로그인</a></li>
-						<li><a href="#">회원가입</a></li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-		<!-- //header -->
-		
-		<!-- 로고 검색자리 4 4 4그리드 -->
-		<div class="row">
-			<div class="col-md-4">
-				<div class="container-fluid clearfix" id="ticketJavaLogo">
-					<h1>
-						<a href=""><img src="assets/image/index/ticketjava-logo.png"></a>
-					</h1>
-				</div>
-			</div>
-			<div class="col-md-4"  id="serachBar">
-				<form class="form-inline">
-					<div class="form-group">
-						<label class="sr-only" for="ticketSearch">ticketSearch</label>
-						<div class="input-group">
-							<input type="text" class="form-control" id="ticketSearch" placeholder="내가 찾는 티켓은.." value="">
+		<div class="container-fluid zp">
+			<div class="container"> <!-- 헤더 로그인 로고 검색창 구역 시작 -->
+				<!-- header 로그인 회원가입 -->
+				<div class="row"> 
+					<div class="col-xs-9"></div>
+					<div class="col-xs-3 zp">
+						<div id="header" class="clearfix">
+							<ul>
+								<li><a href="#"><img src="assets/image/index/bell-normal.png"></a></li>
+								<li><a href="#"><img src="assets/image/index/bell-new.png"></a></li>
+	
+								<li><a href="#">로그인</a></li>
+								<li><a href="#">회원가입</a></li>
+							</ul>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary">티켓잡으러검색</button>
-				</form>
+				</div> 
 			</div>
-			<div class="col-md-4"></div>
-		</div>
-		<!-- 로고 검색자리 종료 -->
 		
-		<!-- 네비바 자리 그리드없음 중앙 정렬 -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<div id="navbar" class="container-fluid" role="navigation">
-				<ul class="clearfix">
-					<li class="nav-item"><a href="">뮤지컬</a></li>
-					<li class="nav-item"><a href="">연극</a></li>
-					<li class="nav-item"><a href="">콘서트</a></li>
-					<li class="nav-item"><a href="">스포츠</a></li>
-					<li class="nav-item"><a href="">전시</a></li>
-					<li class="nav-item"><a href="">공연장</a></li>
-					<li class="nav-item"><a href="">지역</a></li>
-					<li class="nav-item"><a href="">랭킹</a></li>
-				</ul>
-			</div>
-		</nav>
-		<!-- 네비바 종료 -->
-		
-		
-		
-		<div class="container-fluid">
-	
-			<div class="row">
-			
-				<div class="col-md-2"></div>
-				
-				<div class="col-md-8">
-					<div class="row section">
-						<h2 class="pageMenu">뮤지컬 <아이다> 인터네셔널 투어 </h2>
+			<div class="container">
+				<div class="row">
+					<!-- 로고 검색자리 4 4 4그리드 -->
+					<div class="col-xs-3" id="ticketJavaLogo">
+						<a href=""><img src="assets/image/index/ticketjava-logo-150-37.png"></a>
 					</div>
+					
+					
+					<div class="col-xs-9" id="serachBar">
+						<form class="form-horizontal">
+							<input type="text" class="form-control dis vm" placeholder="내가 찾는 티켓은.." value="">
+							<button type="submit" class="btn btn-primary index-search ">티켓잡으러검색</button>
+						</form>
+					</div> <!-- 로고 검색자리 그리드 종료 -->
+				</div>
+			</div> <!-- container 종료 -->
+		</div>
+		
+		
+		
+		<div class="container-fluid zp navbox"> <!-- 네비바 시작 -->
+			<div class="container nav">
+				<!-- 네비바 자리 그리드없음 중앙 정렬 1000px 파란색 줄 -->
+				<nav id="navnav" class="navbar navbar-expand-lg navbar-dark bg-primary btn-primary">
+					<div id="navbar" class="" role="navigation">
+						<ul class="clearfix">
+							<li class="nav-item"><a href="">뮤지컬</a></li>
+							<li class="nav-item"><a href="">연극</a></li>
+							<li class="nav-item"><a href="">콘서트</a></li>
+							<li class="nav-item"><a href="">스포츠</a></li>
+							<li class="nav-item"><a href="">전시</a></li>
+							<li class="nav-item"><a href=""><span class="smallFont">공연장</span></a></li>
+							<li class="nav-item"><a href=""><span class="smallFont">지역</span></a></li>
+							<li id="last-nav-item" class="nav-item"><a href=""><span class="smallFont">랭킹</span></a></li>
+						</ul>
+					</div>
+				</nav>
+				
+			</div> <!-- container 종료 -->
+		</div> <!-- 네비바 종료 -->
+		
+		
+		<!-- 컨텐츠 구역 시작 -->
+		<div class="container-fluid zp">
+			<div class="container">
+				<div class="row">
+					<h2 class="pageMenu section">뮤지컬 <아이다> 인터네셔널 투어 </h2>
+				
+					<div class="container section">
+						<div class="row">
+							<!-- 포스터 위치 -->
+							<div class="col-md-3 np">
+								<img id="mainPoster" src="/project/assets/image/aida.jpg">
+							</div>
+							
+							<div class="col-md-6 np" id="mainInfo">
+								<table id="infoTable">
+									<tr>
+										<th>장소</th>
+										<td>블루스퀘어 신한카드홀</td>
+									</tr>
+									<tr>
+										<th>공연기간</th>
+										<td>2022.05.10 ~ 2022.08.07</td>
+									</tr>
+									<tr>
+										<th>공연시간</th>
+										<td>160분</td>
+									</tr>
+									<tr>
+										<th>관람연령</th>
+										<td>8세이상 관람가능</td>
+									</tr>
+									<tr>
+										<th id="priceTag">가격</th>
+										<td>
+											<table id="priceTable">
+												<tr>
+													<td>VIP석</td>
+													<td>150,000원</td>
+												</tr>
+												<tr>
+													<td>R석</td>
+													<td>130,000원</td>
+												</tr>
+												<tr>
+													<td>S석</td>
+													<td>100,000원</td>
+												</tr>
+												<tr>
+													<td>A석</td>
+													<td>70,000원</td>
+												</tr>	
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+						
+						
+							<div class="col-md-3 np" id="calArea">
+								<!-- 캘린더 api 구현 위치 -->
+								<img id="cal" src="/project/assets/image/cal.png">
+								<button type="button" class="btn btn-primary btn-block">예매하기</button>
+							</div>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 컨텐츠 구역 종료 -->
+		
+		
+		<!-- 푸터 구역 시작 -->
+		<div class="container-fluid zp footerbox"> 
+			<div class="container" id="footer">푸터 내용이 들어갈 자리</div>
+			<!-- 푸터 내용 종료 -->
+		</div>
+		<!-- 푸터 구역 종료 -->
+		
+	</div> <!-- wrap 종료 -->
+	
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
 						
 					<div class="row section">
 						<!-- 포스터 width 250 height 418 -->
