@@ -5,6 +5,7 @@
 }
 
 #admin-aside {
+	margin: 20px 0px 0px 0px;
 	background-color: #f0f0f0;
 	height: 500px;
 }
@@ -15,7 +16,8 @@
 	margin: 30px 10px;
 }
 .admin-pageMenu {
-	font-size: 25px;
+	height: 60px;
+	font-size: 20px;
 	text-align: center;
 	color: #fff;
 	background-color: #6697f2;
