@@ -4,8 +4,9 @@
 #posterArea, #calArea, #mapArea {padding: 0px;}
 
 .pageMenu {
+	font-size: 29px;
+	font-weight: bold;
 	width: 1000px;
-	font-size: 31px;
 	padding: 0px;
 	margin: 0px 0px 10px 0px;
 }
