@@ -6,7 +6,7 @@
 .pageMenu {
 	font-size: 29px;
 	font-weight: bold;
-	width: 1000px;
+	/* width: 1000px; */
 	padding: 0px;
 	margin: 0px 0px 10px 0px;
 }
@@ -28,8 +28,13 @@
 }
 
 .formZipcode {
-	width: 130px;
+	width: 120px;
+	margin-left: 2px;
 	margin-bottom: 10px;
+}
+
+.formZipcode-size {
+	width: 120px;
 }
 
 .position {
