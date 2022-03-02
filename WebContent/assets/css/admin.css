@@ -65,3 +65,10 @@
 	background-color: #f6f6f6;
 	padding: 20px 20px;
 }
+
+.formZipcode {
+	width: 120px;
+	margin-left: 2px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
